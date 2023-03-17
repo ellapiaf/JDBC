@@ -22,7 +22,7 @@ public class Query02 {
         String sql01= "select country_name from countries where region_id=1";
 
         //4) ResultSet
-        ResultSet veri = st.executeQuery(sql01);
+       ResultSet veri = st.executeQuery(sql01);
 
         while (veri.next()) {
             System.out.println(veri.getString(1));
@@ -39,9 +39,9 @@ public class Query02 {
         }
 
         con.close();
-        st.close();
+       st.close();
         veri.close();
-        veri02.close();
+       veri02.close();
 
     }
 

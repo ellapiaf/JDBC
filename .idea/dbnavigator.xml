@@ -13,8 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="68c0b1c9-1b83-4aec-954b-5ffbbc853bde">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from ogrenciler
-select * from countries]]></console>
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from ogrenciler]]></console>
     </connection>
     <connection id="a6cfaa35-84a6-4d9e-97bb-a42480e743f6">
       <console name="Connection 1" type="STANDARD" schema="JDBC" session="Main" />

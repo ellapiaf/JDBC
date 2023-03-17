@@ -20,9 +20,10 @@ oraya tanimladigimizda artik konusabiliriz.
 
 *ilk satira tanimlanacak ..(eksik not tamamla)
 
-executeQuery() ile database 'e ileti yolluyoruz daha sonra biz bu veriyi while dongu kullanarak datalara ulasip onlari yazdirabiliyoruz.
+executeQuery() ile database 'e ileti yolluyoruz ,daha sonra biz bu veriyi while dongu kullanarak datalara ulasip onlari yazdirabiliyoruz.
 
 execute() -> create, drop, alter table (DDL) icin kullanılır.
+executeQuery()->select DQL icin kullanilir.
 
 ResultSetMetaData:Bu arayuzu kullanarak, ResultSet hakkinda daha fazla bilgi alabiliriz.
 Ayrica her ResultSet nesnesi, bir ResultSetMetaData nesnesiyle iliskilendirilir.

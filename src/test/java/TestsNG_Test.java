@@ -21,7 +21,8 @@ public class TestsNG_Test {
    //111 numarali kayit varmi
 
    DatabaseUtilty.createConnection();
-   Assert.assertTrue(DatabaseUtilty.getColumnData("select* from ogrenciler","okul_no").contains(111));
+   Assert.assertTrue(DatabaseUtilty.getColumnData("select* from ogrenciler",
+           "okul_no").contains(111),"DATABASE'DE KAYIT BULUNAMADI");
 
    DatabaseUtilty.closeConnection();
 

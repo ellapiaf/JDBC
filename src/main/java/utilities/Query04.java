@@ -28,5 +28,6 @@ public class Query04 {
 //        System.out.println(rsmd.getColumnTypeName(2));
 //
 //        System.out.println(rsmd.getSchemaName(1));//SCHEMAmiz olmadigi icin bos bir sey vermez suan
+
     }
 }
