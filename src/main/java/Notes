@@ -1,0 +1,37 @@
+JDBC: Mnager vasitasi ile bizi database yonlendiriyor.
+
+Driver:Bu arayuz veritabani sunucusu ile olan iletisimi idare eder.
+
+Connection: Bu arayuz bir veritabani ile iletisim kurmak icin tum yontemleri icerir.Connection iletisim baglamini temsil eder.
+
+ResultSet: JDBC kullanarak veri cekme islemi sonrasinda veri listelemek icin ResultSet sinifi kullanilir.
+
+Database 'e full erisim vermek risklidir genelde sinirli yetkiler verilir.
+
+Genelde select komutu ile calisir.
+
+Example: ResultSet data=st.executeQuery(sql:" ");
+
+Veriler uzerinde dolasmak icin genelde, next ,first ,previous, absolute gibi methodlar kullanilir.
+
+Pom xml dosyasi ne ise yarar :Projenin Kalbidir.
+Bizim icin onemli olan yer properties ve project arasindaki code blogudur.Oraya komutlarimizi tanimliyoruz.or fr bilmiyorsak
+oraya tanimladigimizda artik konusabiliriz.
+
+*ilk satira tanimlanacak ..(eksik not tamamla)
+
+executeQuery() ile database 'e ileti yolluyoruz daha sonra biz bu veriyi while dongu kullanarak datalara ulasip onlari yazdirabiliyoruz.
+
+execute() -> create, drop, alter table (DDL) icin kullanılır.
+
+ResultSetMetaData:Bu arayuzu kullanarak, ResultSet hakkinda daha fazla bilgi alabiliriz.
+Ayrica her ResultSet nesnesi, bir ResultSetMetaData nesnesiyle iliskilendirilir.
+
+executeUpdate:int deger donduruyor.
+execute:bize boolean deger donduruyor.
+executeQuery:resultSet deger donduruyor.
+
+PreparedStatement:Yazdigimiz herhangi bir SQL sorgusunu Statement durumunda calistirdigimizda: bu sorgu her calistirildiginda
+veri tabaninin belleginde bu sorgunun bir ornegi saklanir.bu sorgunun binlerce kez calistigini dusunursek bu veritabanini yorar
+bundan dolayi PreparedStatement kullanmak dogru olur.
+
